@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061b3a">
+    <meta name="description" content="Da un'altra parte — una ricerca teatrale sul senso di appartenenza. Il Teatro di Pan, Berlino.">
+    <meta property="og:title" content="Da un'altra parte — Il Teatro di Pan">
+    <meta property="og:description" content="Una ricerca teatrale sul senso di appartenenza. 11 ottobre 2026, Berlino.">
+    <meta property="og:image" content="assets/horizon-artwork.jpeg">
+    <title>Da un'altra parte — Il Teatro di Pan</title>
+    <link rel="preload" as="image" href="assets/horizon-artwork.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content" data-i18n="skipLink">Salta al contenuto</a>
+
+    <header class="site-header">
+      <a class="brand" href="#home">
+        Da un'altra parte
+      </a>
+
+      <nav class="primary-nav" aria-label="Navigazione principale" data-i18n-aria-label="navLabel">
+        <a href="#spettacolo" data-i18n="navShow">Lo spettacolo</a>
+        <a href="#cast" data-i18n="navCast">Cast</a>
+        <a href="#scene" data-i18n="navScenes">Le scene</a>
+        <a href="#credits" data-i18n="navCredits">Crediti</a>
+      </nav>
+
+      <div class="language-switch" role="group" aria-label="Lingua / Language">
+        <button type="button" data-language="it" aria-pressed="true">IT</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="hero-title-block">
+            <img src="assets/logo.png" class="hero-logo" alt="Il Teatro di Pan">
+            <h1 id="hero-title">Da un'altra<br class="title-break"> parte</h1>
+          </div>
+          <p class="hero-tagline" data-i18n="tagline">Una ricerca teatrale sul senso di appartenenza</p>
+          <div class="hero-rule" aria-hidden="true"><span></span></div>
+          <div class="event-details">
+            <p class="event-date" data-i18n="date">Domenica 11 ottobre 2026 · ore 20:00</p>
+            <p class="event-venue">Studiobühne Alte Feuerwache Friedrichshain</p>
+            <p class="event-address">Marchlewskistraße 6, 10243 Berlin</p>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#spettacolo" aria-label="Scopri lo spettacolo" data-i18n-aria-label="scrollCue">
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section class="content-section overview-section" id="spettacolo" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="overviewEyebrow">Il progetto</p>
+          <h2 id="overview-title" data-i18n="overviewTitle">Una domanda aperta</h2>
+        </div>
+        <div class="overview-copy" id="overview-copy"></div>
+      </section>
+
+      <section class="content-section cast-section" id="cast" aria-labelledby="cast-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="castEyebrow">In scena</p>
+          <h2 id="cast-title" data-i18n="castTitle">Il cast</h2>
+        </div>
+        <div class="cast-grid" id="cast-grid"></div>
+      </section>
+
+      <section class="content-section scenes-section" id="scene" aria-labelledby="scenes-title">
+        <div class="section-heading scenes-heading">
+          <div>
+            <p class="eyebrow" data-i18n="scenesEyebrow">Una mappa per lo spettacolo</p>
+            <h2 id="scenes-title" data-i18n="scenesTitle">Le scene</h2>
+          </div>
+          <p class="section-intro" data-i18n="scenesIntro">Un percorso fatto di memorie, lingue e partenze. Le domande restano aperte; gli estratti verranno aggiunti.</p>
+        </div>
+        <div class="scene-list" id="scene-list"></div>
+      </section>
+
+      <section class="content-section credits-section" id="credits" aria-labelledby="credits-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="creditsEyebrow">Dietro le quinte</p>
+          <h2 id="credits-title" data-i18n="creditsTitle">Crediti</h2>
+        </div>
+        <div class="credits-grid" id="credits-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home">Il Teatro di Pan</a>
+      <p data-i18n="footerLine">Berlino · 2026</p>
+      <a href="#home" class="back-to-top"><span data-i18n="backToTop">Torna all'inizio</span><span aria-hidden="true">↑</span></a>
+    </footer>
+    <div class="sr-only" id="language-announcement" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
