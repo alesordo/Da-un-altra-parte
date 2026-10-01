@@ -1,6 +1,6 @@
 const content = {
   it: {
-    pageTitle: "Da un'altra parte — Il Teatro di Pan",
+    pageTitle: "Da un'altra parte - Il Teatro di Pan",
     htmlLanguage: "it",
     labels: {
       skipLink: "Salta al contenuto",
@@ -42,7 +42,7 @@ const content = {
     ],
     scenes: [
       {
-        title: "La barca",
+        title: "Intro",
         summary: "Sette corpi immaginano una traversata. Il respiro diventa ritmo comune, poi si spezza.",
         question: "Che cosa portiamo con noi quando partiamo?"
       },
@@ -72,17 +72,17 @@ const content = {
         question: "Quanto è difficile investire in un luogo senza sapere per quanto ci resteremo?"
       },
       {
-        title: "Le tre sedie",
+        title: "Riflessioni",
         summary: "Italiano, tedesco e spagnolo si intrecciano nei ricordi e nelle parole che tengono insieme una famiglia.",
         question: "Quali parole conservano un luogo e una storia familiare?"
       },
       {
-        title: "La lingua come casa",
+        title: "Cosa mi fa sentire a casa?",
         summary: "Una lingua può avvicinarci alle nostre radici e, altrove, farci sentire fuori posto.",
         question: "La lingua può farci sentire a casa o fuori posto?"
       },
       {
-        title: "Ritornare alla barca",
+        title: "Epilogo",
         summary: "Il respiro e il movimento riportano il gruppo all'immagine iniziale della traversata.",
         question: "E se casa fosse imparare a stare in equilibrio mentre tutto si muove?"
       }
@@ -95,7 +95,7 @@ const content = {
     ]
   },
   en: {
-    pageTitle: "Da un'altra parte — Il Teatro di Pan",
+    pageTitle: "Da un'altra parte - Il Teatro di Pan",
     htmlLanguage: "en",
     labels: {
       skipLink: "Skip to content",
@@ -132,12 +132,12 @@ const content = {
     },
     overview: [
       "“Da un'altra parte” is an artistic research project exploring the personal and social meaning of Heimat: home, a place of belonging, and a sense of rootedness.",
-      "At its heart are individual memories, personal experiences, and different ideas of what it means to feel at home. The project begins with open questions: What turns a place into a home? Can you feel at home in more than one place—or in none? How do migration, belonging, language, and personal experience shape our idea of home?",
+      "At its heart are individual memories, personal experiences, and different ideas of what it means to feel at home. The project begins with open questions: What turns a place into a home? Can you feel at home in more than one place, or in none? How do migration, belonging, language, and personal experience shape our idea of home?",
       "This is an open-ended exploration. It offers no ready-made answers, but brings different perspectives into view and makes room for new questions."
     ],
     scenes: [
       {
-        title: "The Boat",
+        title: "Intro",
         summary: "Seven bodies imagine a crossing. Breath becomes a shared rhythm, then slips out of sync.",
         question: "What do we carry with us when we leave?"
       },
@@ -167,17 +167,17 @@ const content = {
         question: "How hard is it to invest in a place when you don't know how long you'll stay?"
       },
       {
-        title: "The Three Chairs",
+        title: "Reflections",
         summary: "Italian, German and Spanish intertwine in memories and words that hold a family together.",
         question: "Which words preserve a place and a family history?"
       },
       {
-        title: "Language as Home",
+        title: "What Makes Me Feel At Home?",
         summary: "A language can bring us closer to our roots and, somewhere else, make us feel out of place.",
         question: "Can language make us feel at home or out of place?"
       },
       {
-        title: "Back to the Boat",
+        title: "Epilogue",
         summary: "Breath and movement bring the group back to the opening image of a crossing.",
         question: "What if home meant learning to stay balanced while everything moves?"
       }
@@ -226,8 +226,8 @@ function renderCast(copy) {
       <article class="cast-card">
         <div class="cast-portrait"${image ? "" : ` role="img" aria-label="${portraitPending}: ${name}"`}>
           ${image
-            ? `<img class="cast-photo" src="${image}" alt="${portraitAlt} ${name}">`
-            : `<span aria-hidden="true">${initials(name)}</span>`}
+        ? `<img class="cast-photo" src="${image}" alt="${portraitAlt} ${name}">`
+        : `<span aria-hidden="true">${initials(name)}</span>`}
         </div>
         <h3>${name}</h3>
       </article>
@@ -243,8 +243,8 @@ function renderScenes(copy) {
         <div class="scene-number" aria-hidden="true">${String(index + 1).padStart(2, "0")}</div>
         <div class="scene-main">
           <h3>${scene.title}</h3>
-          <p class="scene-summary">${scene.summary}</p>
-          <!-- <div class="scene-question">
+          <!-- <p class="scene-summary">${scene.summary}</p>
+          <div class="scene-question">
             <span class="eyebrow">${labels.questionLabel}</span>
             <p>${scene.question}</p>
           </div> -->
