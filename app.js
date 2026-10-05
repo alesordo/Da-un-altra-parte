@@ -33,7 +33,7 @@ const content = {
       creditCostume: "Costumi",
       creditSound: "Suoni",
       creditLight: "Luci",
-      creditCast: "Con"
+      creditText: "I testi sono stati scritti da"
     },
     overview: [
       "“Da un'altra parte” è un progetto di ricerca artistica che indaga il significato personale e sociale del concetto di Heimat, inteso come casa, luogo di appartenenza e senso di radicamento.",
@@ -88,10 +88,12 @@ const content = {
       }
     ],
     credits: [
-      { role: "Regia", name: "Erika Tribbioli" },
       { role: "Costumi", name: "Kathrin Hauer" },
-      { role: "Suoni", name: "Davide Bozzaro" },
-      { role: "Luci", name: "Cordula Ritter" }
+      { role: "Luci", name: "Cordula Ritter" },
+      { role: "Suono", name: "Davide Bozzaro" },
+      { role: "Assistenza sala", name: "Nicoló Rossi" },
+      { role: "Assistenza camerino", name: "Emilia Refolo" },
+      { role: "Foto", name: "Jade Thoms" }
     ]
   },
   en: {
@@ -128,7 +130,7 @@ const content = {
       creditCostume: "Costumes",
       creditSound: "Sound",
       creditLight: "Lighting",
-      creditCast: "With"
+      creditText: "Script written by"
     },
     overview: [
       "“Da un'altra parte” is an artistic research project exploring the personal and social meaning of Heimat: home, a place of belonging, and a sense of rootedness.",
@@ -183,13 +185,17 @@ const content = {
       }
     ],
     credits: [
-      { role: "Direction", name: "Erika Tribbioli" },
       { role: "Costumes", name: "Kathrin Hauer" },
+      { role: "Lightning", name: "Cordula Ritter" },
       { role: "Sound", name: "Davide Bozzaro" },
-      { role: "Lighting", name: "Cordula Ritter" }
+      { role: "Theatre Stage Assistance", name: "Nicoló Rossi" },
+      { role: "Theatre Dressing Room Assistance", name: "Emilia Refolo" },
+      { role: "Photos", name: "Jade Thoms" }
     ]
   }
 };
+
+const textNames =  "German Brero · Mattia Doneda · Manuela Pucciarelli · Sara Romandini · Marina Rondini"
 
 const performers = [
   { name: "Daniele Avola", image: null },
@@ -282,12 +288,12 @@ function renderCredits(copy) {
       </div>
     `)
     .join("");
-  const castNames = performers.map(({ name }) => name).join(" · ");
+  // const castNames = performers.map(({ name }) => name).join(" · ");
   document.querySelector("#credits-grid").innerHTML = `
     ${creditItems}
     <div class="credit-item credit-cast">
-      <span class="credit-role">${copy.labels.creditCast}</span>
-      <span class="credit-name">${castNames}</span>
+      <span class="credit-role">${copy.labels.creditText}</span>
+      <span class="credit-name">${textNames}</span>
     </div>
   `;
 }
