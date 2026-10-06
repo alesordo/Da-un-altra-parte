@@ -16,6 +16,7 @@ const content = {
       overviewTitle: "Una domanda aperta",
       castEyebrow: "In scena",
       castTitle: "Il cast",
+      directorRole: "Regia",
       scenesEyebrow: "Una mappa per lo spettacolo",
       scenesTitle: "Le scene",
       scenesIntro: "Un percorso fatto di memorie, lingue e partenze.",
@@ -113,6 +114,7 @@ const content = {
       overviewTitle: "An open question",
       castEyebrow: "On stage",
       castTitle: "The cast",
+      directorRole: "Direction",
       scenesEyebrow: "A guide to the play",
       scenesTitle: "The scenes",
       scenesIntro: "A journey through memories, languages and departures.",
@@ -206,6 +208,7 @@ const performers = [
   { name: "Alessio Sordo", image: "assets/actors/alessio.jpg" },
   { name: "Valentina Tomassini", image: "assets/actors/valentina.jpg" }
 ];
+const director = { name: "Erika Tribbioli", image: "assets/actors/erika.jpg" };
 
 const languageButtons = [...document.querySelectorAll("[data-language]")];
 let currentLanguage = "it";
@@ -227,8 +230,7 @@ function renderOverview(copy) {
 
 function renderCast(copy) {
   const { portraitAlt, portraitPending } = copy.labels;
-  document.querySelector("#cast-grid").innerHTML = performers
-    .map(({ name, image }) => `
+  const renderCard = ({ name, image }) => `
       <article class="cast-card">
         <div class="cast-portrait"${image ? "" : ` role="img" aria-label="${portraitPending}: ${name}"`}>
           ${image
@@ -237,7 +239,12 @@ function renderCast(copy) {
         </div>
         <h3>${name}</h3>
       </article>
-    `)
+    `;
+  document.querySelector("#cast-grid").innerHTML = performers
+    .map(renderCard)
+    .join("");
+  document.querySelector("#director-grid").innerHTML = [director]
+    .map(renderCard)
     .join("");
 }
 

@@ -356,6 +356,16 @@ a {
   gap: clamp(1.1rem, 2.6vw, 2rem);
 }
 
+.director-block {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.director-role {
+  margin-bottom: 1rem;
+}
+
 .cast-card {
   min-width: 0;
 }
