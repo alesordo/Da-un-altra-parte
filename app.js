@@ -195,16 +195,16 @@ const content = {
   }
 };
 
-const textNames =  "German Brero · Mattia Doneda · Manuela Pucciarelli · Sara Romandini · Marina Rondini"
+const textNames = "German Brero · Mattia Doneda · Manuela Pucciarelli · Sara Romandini · Marina Rondini"
 
 const performers = [
-  { name: "Daniele Avola", image: null },
-  { name: "German Brero", image: null },
+  { name: "Daniele Avola", image: "assets/actors/daniele.jpg" },
+  { name: "German Brero", image: "assets/actors/german.jpg" },
   { name: "Manuela Pucciarelli", image: null },
-  { name: "Sara Romandini", image: null },
-  { name: "Marina Rondini", image: null },
-  { name: "Alessio Sordo", image: null },
-  { name: "Valentina Tomassini", image: null }
+  { name: "Sara Romandini", image: "assets/actors/sara.jpg" },
+  { name: "Marina Rondini", image: "assets/actors/marina.jpg" },
+  { name: "Alessio Sordo", image: "assets/actors/alessio.jpg" },
+  { name: "Valentina Tomassini", image: "assets/actors/valentina.jpg" }
 ];
 
 const languageButtons = [...document.querySelectorAll("[data-language]")];
