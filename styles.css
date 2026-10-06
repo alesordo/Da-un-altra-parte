@@ -508,7 +508,7 @@ a {
 .excerpt-slot {
   display: flex;
   min-height: 60px;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.75rem;
   padding: 0.7rem 0.85rem;
   border: 1px dashed rgba(213, 230, 240, 0.28);
@@ -522,6 +522,12 @@ a {
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.14em;
+}
+
+.excerpt-prompt {
+  flex: 1 1 auto;
+  min-width: 0;
+  line-height: 1.5;
 }
 
 .credits-section {

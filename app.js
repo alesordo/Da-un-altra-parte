@@ -41,49 +41,68 @@ const content = {
       "Al centro del progetto ci sono ricordi individuali, esperienze personali e diverse concezioni di ciò che significa sentirsi a casa. Il punto di partenza sono soprattutto domande aperte: che cosa trasforma un luogo in una casa? È possibile sentirsi a casa in più luoghi – oppure in nessuno? In che modo la migrazione, il senso di appartenenza, la lingua e le esperienze personali modificano la nostra idea di casa?",
       "Il progetto si configura come una ricerca aperta, che non intende offrire risposte precostituite, ma rendere visibili prospettive diverse e lasciare emergere nuove domande."
     ],
+    // Edit each scene's excerpts.it and excerpts.en fields here. Blank fields show localized prompts.
     scenes: [
       {
+        id: "intro",
         title: "Intro",
+        excerpts: { it: "", en: "" },
         summary: "Sette corpi immaginano una traversata. Il respiro diventa ritmo comune, poi si spezza.",
         question: "Che cosa portiamo con noi quando partiamo?"
       },
       {
+        id: "whereDoIComeFrom",
         title: "Da dove vengo?",
+        excerpts: { it: "", en: "" },
         summary: "Un racconto familiare ripercorre il viaggio del padre di Manuela dalla Basilicata a Berlino nel 1968.",
         question: "Quando la partenza di una persona diventa parte della storia di un'intera famiglia?"
       },
       {
+        id: "soWhenDoYouComeBack",
         title: "Sì, ma quando torni?",
+        excerpts: { it: "", en: "" },
         summary: "Un'intervista si trasforma in un coro di domande, aspettative e stereotipi rivolti a chi emigra.",
         question: "Chi ha il diritto di chiedere perché qualcuno è partito?"
       },
       {
+        id: "functioningIsNotBelonging",
         title: "Funzionare non è appartenere",
+        excerpts: { it: "", en: "" },
         summary: "Un pacco arrivato da casa porta con sé cibo, affetto, nostalgia e domande difficili.",
         question: "Si può stare bene in un luogo senza sentirsi parte?"
       },
       {
+        id: "whyDoYouLeave",
         title: "Perché te ne vai?",
+        excerpts: { it: "", en: "" },
         summary: "Partire può nascere anche dalla curiosità, dal desiderio di cambiare e dallo spazio per reinventarsi.",
         question: "Si può partire per desiderio, non per mancanza?"
       },
       {
+        id: "whatIfILeave",
         title: "E se poi me ne vado?",
+        excerpts: { it: "", en: "" },
         summary: "Una cucina lasciata a metà diventa il ritratto di una casa e di un futuro tenuti in sospeso.",
         question: "Quanto è difficile investire in un luogo senza sapere per quanto ci resteremo?"
       },
       {
+        id: "reflections",
         title: "Riflessioni",
+        excerpts: { it: "", en: "" },
         summary: "Italiano, tedesco e spagnolo si intrecciano nei ricordi e nelle parole che tengono insieme una famiglia.",
         question: "Quali parole conservano un luogo e una storia familiare?"
       },
       {
+        id: "whatMakesMeFeelAtHome",
         title: "Cosa mi fa sentire a casa?",
+        excerpts: { it: "", en: "" },
         summary: "Una lingua può avvicinarci alle nostre radici e, altrove, farci sentire fuori posto.",
         question: "La lingua può farci sentire a casa o fuori posto?"
       },
       {
+        id: "epilogue",
         title: "Epilogo",
+        excerpts: { it: "", en: "" },
         summary: "Il respiro e il movimento riportano il gruppo all'immagine iniziale della traversata.",
         question: "E se casa fosse imparare a stare in equilibrio mentre tutto si muove?"
       }
@@ -141,46 +160,55 @@ const content = {
     ],
     scenes: [
       {
+        id: "intro",
         title: "Intro",
         summary: "Seven bodies imagine a crossing. Breath becomes a shared rhythm, then slips out of sync.",
         question: "What do we carry with us when we leave?"
       },
       {
+        id: "whereDoIComeFrom",
         title: "Where Do I Come From?",
         summary: "A family story retraces Manuela's father's journey from Basilicata to Berlin in 1968.",
         question: "When does one person's departure become part of a whole family's story?"
       },
       {
+        id: "soWhenDoYouComeBack",
         title: "So, When Are You Coming Back?",
         summary: "An interview becomes a chorus of questions, expectations and stereotypes directed at migrants.",
         question: "Who gets to ask why someone left?"
       },
       {
+        id: "functioningIsNotBelonging",
         title: "Functioning Is Not Belonging",
         summary: "A package from home carries food, affection, longing and difficult questions.",
         question: "Can you be well in a place without feeling that you belong?"
       },
       {
+        id: "whyDoYouLeave",
         title: "Why Do You Leave?",
         summary: "Leaving can also grow from curiosity, a desire for change and the freedom to reinvent yourself.",
         question: "Can we leave out of desire, rather than need?"
       },
       {
+        id: "whatIfILeave",
         title: "What If I Leave?",
         summary: "An unfinished kitchen becomes a portrait of a home and a future kept on hold.",
         question: "How hard is it to invest in a place when you don't know how long you'll stay?"
       },
       {
+        id: "reflections",
         title: "Reflections",
         summary: "Italian, German and Spanish intertwine in memories and words that hold a family together.",
         question: "Which words preserve a place and a family history?"
       },
       {
+        id: "whatMakesMeFeelAtHome",
         title: "What Makes Me Feel At Home?",
         summary: "A language can bring us closer to our roots and, somewhere else, make us feel out of place.",
         question: "Can language make us feel at home or out of place?"
       },
       {
+        id: "epilogue",
         title: "Epilogue",
         summary: "Breath and movement bring the group back to the opening image of a crossing.",
         question: "What if home meant learning to stay balanced while everything moves?"
@@ -248,10 +276,29 @@ function renderCast(copy) {
     .join("");
 }
 
+function escapeHtml(value) {
+  return value.replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[character]);
+}
+
+function renderExcerpt(value) {
+  return escapeHtml(value)
+    .replace(/\*\*([^*\n]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*([^*\n]+)\*/g, "<em>$1</em>")
+    .replace(/\r?\n/g, "<br>");
+}
+
 function renderScenes(copy) {
   const { labels } = copy;
   document.querySelector("#scene-list").innerHTML = copy.scenes
-    .map((scene, index) => `
+    .map((scene, index) => {
+      const excerpts = content.it.scenes.find(({ id }) => id === scene.id)?.excerpts || {};
+      return `
       <article class="scene-card">
         <div class="scene-number" aria-hidden="true">${String(index + 1).padStart(2, "0")}</div>
         <div class="scene-main">
@@ -266,17 +313,18 @@ function renderScenes(copy) {
             <div class="excerpt-pair">
               <div class="excerpt-slot">
                 <span class="excerpt-language">IT</span>
-                <span class="excerpt-prompt">${labels.italianExcerpt}</span>
+                <span class="excerpt-prompt">${renderExcerpt(excerpts.it || labels.italianExcerpt)}</span>
               </div>
               <div class="excerpt-slot">
                 <span class="excerpt-language">EN</span>
-                <span class="excerpt-prompt">${labels.englishExcerpt}</span>
+                <span class="excerpt-prompt">${renderExcerpt(excerpts.en || labels.englishExcerpt)}</span>
               </div>
             </div>
           </div>
         </div>
       </article>
-    `)
+    `;
+    })
     .join("");
 }
 
