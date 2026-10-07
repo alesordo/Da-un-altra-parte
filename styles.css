@@ -15,6 +15,42 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "DejaVu Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("assets/font/dejavu-sans/dejavu-sans-latin-400-normal%20(2).woff2") format("woff2"),
+    url("assets/font/dejavu-sans/dejavu-sans-latin-400-normal%20(2).woff") format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("assets/font/dejavu-sans/dejavu-sans-latin-400-italic%20(2).woff2") format("woff2"),
+    url("assets/font/dejavu-sans/dejavu-sans-latin-400-italic%20(2).woff") format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("assets/font/dejavu-sans/dejavu-sans-latin-700-normal%20(2).woff2") format("woff2"),
+    url("assets/font/dejavu-sans/dejavu-sans-latin-700-normal%20(2).woff") format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url("assets/font/dejavu-sans/dejavu-sans-latin-700-italic%20(2).woff2") format("woff2"),
+    url("assets/font/dejavu-sans/dejavu-sans-latin-700-italic%20(2).woff") format("woff");
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 88px;
@@ -24,7 +60,7 @@ body {
   margin: 0;
   background: var(--navy-deep);
   color: var(--ice);
-  font-family: Verdana, "Segoe UI", Arial, sans-serif;
+  font-family: Verdana, "DejaVu Sans", "Segoe UI", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
