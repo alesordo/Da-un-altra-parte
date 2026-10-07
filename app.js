@@ -351,7 +351,7 @@ This constant need to translate yourself, to try to translate your own identity.
       }
     ],
     credits: [
-      { role: "Costumi", name: "Kathrin Hauer" },
+      { role: "Costumi", name: "Kathrin Hauer", href: "https://www.kathrinhauer.de/de/" },
       { role: "Luci", name: "Cordula Ritter" },
       { role: "Suono", name: "Davide Bozzaro" },
       { role: "Assistenza sala", name: "Nicoló Rossi" },
@@ -458,7 +458,7 @@ This constant need to translate yourself, to try to translate your own identity.
       }
     ],
     credits: [
-      { role: "Costumes", name: "Kathrin Hauer" },
+      { role: "Costumes", name: "Kathrin Hauer", href: "https://www.kathrinhauer.de/de/" },
       { role: "Lightning", name: "Cordula Ritter" },
       { role: "Sound", name: "Davide Bozzaro" },
       { role: "Theatre Stage Assistance", name: "Nicoló Rossi" },
@@ -579,10 +579,12 @@ function renderCredits(copy) {
     Luci: copy.labels.creditLight
   };
   const creditItems = copy.credits
-    .map(({ role, name }) => `
+    .map(({ role, name, href }) => `
       <div class="credit-item">
         <span class="credit-role">${labelMap[role] || role}</span>
-        <span class="credit-name">${name}</span>
+        <span class="credit-name">${href
+          ? `<a href="${href}" target="_blank" rel="noopener">${name}</a>`
+          : name}</span>
       </div>
     `)
     .join("");
