@@ -337,7 +337,7 @@ This constant need to translate yourself, to try to translate your own identity.
 **Pane.**
 **Paura.**
 **Casa.**
-**TI VOGLIO BENE.**`,
+**Ti voglio bene.**`,
           en: `On the journey, what we always carry with us — what can never be erased — are the words we learned at the very beginning.
 
 **Mum.**
@@ -369,7 +369,7 @@ This constant need to translate yourself, to try to translate your own identity.
       navCast: "Cast",
       navScenes: "Scenes",
       navCredits: "Credits",
-      tagline: "An artistic research project on belonging",
+      tagline: "An artistic research project on the meaning of belonging",
       date: "Sunday, 11 October 2026 · 8:00 pm",
       scrollCue: "Discover the play",
       overviewEyebrow: "The project",
