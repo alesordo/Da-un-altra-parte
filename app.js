@@ -352,7 +352,7 @@ This constant need to translate yourself, to try to translate your own identity.
     ],
     credits: [
       { role: "Costumi", name: "Kathrin Hauer", href: "https://www.kathrinhauer.de/de/" },
-      { role: "Luci", name: "Cordula Ritter" },
+      { role: "Luci", name: "Martina Maric" },
       { role: "Suono", name: "Davide Bozzaro" },
       { role: "Assistenza sala", name: "Nicoló Rossi" },
       { role: "Assistenza camerino", name: "Emilia Refolo" },
@@ -459,7 +459,7 @@ This constant need to translate yourself, to try to translate your own identity.
     ],
     credits: [
       { role: "Costumes", name: "Kathrin Hauer", href: "https://www.kathrinhauer.de/de/" },
-      { role: "Lightning", name: "Cordula Ritter" },
+      { role: "Lightning", name: "Martina Maric" },
       { role: "Sound", name: "Davide Bozzaro" },
       { role: "Theatre Stage Assistance", name: "Nicoló Rossi" },
       { role: "Theatre Dressing Room Assistance", name: "Emilia Refolo" },
