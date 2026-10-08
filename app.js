@@ -381,7 +381,7 @@ They don't understand this constant need to translate yourself, to try to transl
       overviewTitle: "An open question",
       castEyebrow: "On stage",
       castTitle: "The cast",
-      directorRole: "Direction",
+      directorRole: "Director",
       scenesEyebrow: "A map of the play",
       scenesTitle: "The scenes",
       scenesIntro: "A journey through memories, languages and departures.",
