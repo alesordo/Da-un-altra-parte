@@ -2,6 +2,9 @@ const content = {
   it: {
     pageTitle: "Da un'altra parte - Il Teatro di Pan",
     htmlLanguage: "it",
+    metaDescription: "Da un'altra parte - una ricerca teatrale sul senso di appartenenza. Il Teatro di Pan, Berlino.",
+    ogTitle: "Da un'altra parte - Il Teatro di Pan",
+    ogDescription: "Una ricerca teatrale sul senso di appartenenza. 11 ottobre 2026, Berlino.",
     labels: {
       skipLink: "Salta al contenuto",
       navLabel: "Navigazione principale",
@@ -53,12 +56,12 @@ Non fermarti. Più forte. Scrivimi. Vai avanti. Vedo qualcosa. Mi mancherai.
 Non vedo. Dove? Più piano. Aspetta. Mi sono perso. C'è nebbia. Da che parte?
 
 Non regge. È buio. Ho paura. Solo mare. Aiuto. Terra. Dove sono?`,
-          en: `Water. Forward.Together. Breathe.
-Don't stop. Faster. Write to me. Keep going. I see something. I will miss you.
+          en: `Water. Forward. Together. Breathe.
+Don't stop. Faster. Write to me. Keep going. I see something. I'll miss you.
 
-I can't see. Where? Slower. Hold on. I am lost. There is fog. Which way?
+I can't see. Where? Slower. Wait. I'm lost. There's fog. Which way?
 
-It won't hold. It's dark. I'm scared. Only the sea. Help. Land. Where am I?`
+It won't hold. It's dark. I'm scared. Nothing but sea. Help. Land. Where am I?`
         },
         summary: "Sette corpi immaginano una traversata. Il respiro diventa ritmo comune, poi si spezza.",
         question: "Che cosa portiamo con noi quando partiamo?"
@@ -78,7 +81,7 @@ Forse in quel momento è una fortuna non appartenere a nessuna delle due Germani
 [...]
 
 Così ebbe inizio la sua storia a Berlino e anche la mia.`,
-          en: `It is November 1968 when he sets off by train. A journey of 1,800 kilometres... He sets foot in freezing East Berlin for the first time.
+          en: `It is November 1968 when he sets off by train. A journey of 1,800 kilometres. [...] He sets foot in freezing East Berlin for the first time.
 
 Maybe at that moment it's a good thing not to belong to either of the two Germanies. To simply be a foreigner. A young man who speaks neither German nor English.
 
@@ -119,9 +122,9 @@ Fai la colazione al bar? È vero che frutta e verdura non sanno di niente? Come 
 
 “Da quanto?” “Due anni?” “Ti piace?” “Torni?” “Quando?” “Perché sei andato?” “Qui non bastava?”
 
-**ALESSIO: NON LO SO.**`,
+**ALESSIO: Non lo so.**`,
           en: `**INTERVIEWER:** So, how are you finding Germany?
-**ALESSIO:** I'm settling in, I'm trying to speak German...
+**ALESSIO:** I'm settling in, I'm trying to learn German...
 **INTERVIEWER:** Ah, German... it's difficult to learn, isn't it?
 
 [...]
@@ -138,11 +141,11 @@ You have to admit, though — nowhere does food like Italy!
 
 [...]
 
-Are you coming back? When? Why did you leave? Wasn't what you had here enough? Do you have breakfast at a café? Is it true that fruit and vegetables don't taste of anything? How do you manage without a bidet? Isn't it depressing living there?
+Do you have breakfast at a café? Is it true that fruit and vegetables have no taste at all? How do you manage without a bidet? Isn't it depressing living there?
 
-How long? Two years? Do you like it? Are you coming back? When? Why did you go? Wasn't what you had here enough?
+“How long?” “Two years?” “Do you like it?” “Are you coming back?” “When?” “Why did you go?” “Wasn't what you had here enough?”
 
-**ALESSIO: I DON'T KNOW.**`
+**ALESSIO: I don't know.**`
         },
         summary: "Un'intervista si trasforma in un coro di domande, aspettative e stereotipi rivolti a chi emigra.",
         question: "Chi ha il diritto di chiedere perché qualcuno è partito?"
@@ -162,7 +165,7 @@ How long? Two years? Do you like it? Are you coming back? When? Why did you go? 
 **ALESSIO:** Perché non sei più completamente da nessuna parte. Sei tra due versioni della tua vita. E nessuna delle due è intera.`,
           en: `**ALESSIO:** But there's a difference between functioning and belonging. Functioning is easy. You understand the rules, you follow them. Belonging is something else. It's not up to you.
 
-**DANIELE:** But that's the lightest part of the package. The weight the scales can measure. Then there's the real weight. You can't see that one. Only the heart can measure it.
+**DANIELE:** But that's the lightest part of the parcel. The weight the scales can read. Then there's the real weight. You can't see that one. Only the heart can read it.
 
 **VALENTINA:** At some point, many people cross an invisible threshold. [...] And a foreign city is no longer somewhere you're just passing through, or the subject of some anthropological study. It becomes a new home.
 
@@ -193,7 +196,7 @@ Alla fine, l’estraneo non era l’altro.
 **L’estraneo ero io.**`,
           en: `In my case, it wasn't as though I was escaping hunger or insecurity... The truth is, I had no urgent need to leave my country.
 
-And what if I'd been born somewhere else? In some remote part of India? Would I be who I am today? What if there were a part of me that feels Buddhist? What if there were a part of me drawn to pure geometry and duty?
+And what if I'd been born somewhere else? In some remote part of India? [...] Would I be who I am today? [...] What if there were a part of me that feels Buddhist? What if there were a part of me drawn to pure geometry and duty?
 
 On the one hand, migration demands enormous effort, adaptability, independence... But on the other, it also creates room to play, to reinvent yourself, to be free — a margin of possibility. Through migration we gain a *Spielraum* — room to play, to explore possibilities — that perhaps we were never given back home, within our families.
 
@@ -236,15 +239,13 @@ Chissà cosa succederebbe alla mia cucina se cominciassi a chiedermi:
 
 [...]
 
-I didn't want to invest too much in the kitchen. What if I ended up leaving?
-
-But I needed something. Better to do it quickly, cobble together some temporary solution that would allow me to get by.
+I didn't want to invest too much in the kitchen. What if I end up leaving? I'd tell myself. But I needed something. Better to do it quickly, cobble together some temporary solution that would allow me to get by.
 
 [...]
 
 I furnished the rest of the apartment. [...] Each room took shape and gradually became more and more my own.
 
-Then I'd look at the kitchen — bare, impractical, often dirty — and think: I really should get myself a proper kitchen. But what's the point? What if I ended up leaving?
+Then I'd look at the kitchen — bare, impractical, often dirty — and think: I really should get myself a proper kitchen. But what's the point? What if I end up leaving?
 
 [...]
 
@@ -252,7 +253,7 @@ And because I don't feel at home, I don't build the kitchen. And without a kitch
 
 I wonder what would happen to my kitchen if I started asking myself:
 
-**“What if I don't leave?”**`
+**“What if I end up not leaving?”**`
         },
         summary: "Una cucina lasciata a metà diventa il ritratto di una casa e di un futuro tenuti in sospeso.",
         question: "Quanto è difficile investire in un luogo senza sapere per quanto ci resteremo?"
@@ -278,7 +279,7 @@ One of those words or phrases would be enough for us siblings to recognise one a
 
 **MANUELA:** Above all, it is through language that I manage to stay connected to my roots. I wouldn't give up, for anything in the world, thinking, hearing, speaking — feeling — the language of my parents.
 
-**GERMAN:** I also remember my grandfather and his stock phrases. [...] “Forward, Bersaglieri, the battle is ours!” [...] She stood there, stunned, and replied: “That's something my grandfather could have said.” And I said: “Yes... mine used to say it too.”`
+**GERMAN:** I also remember my grandfather and his sayings. [...] “Avanti bersaglieri, che la battaglia è nostra!” [...] She stood there, stunned, and replied: “That's something my grandfather could have said.” And I said: “Yes... mine used to say it too.”`
         },
         summary: "Italiano, tedesco e spagnolo si intrecciano nei ricordi e nelle parole che tengono insieme una famiglia.",
         question: "Quali parole conservano un luogo e una storia familiare?"
@@ -319,9 +320,9 @@ Sometimes I'm too loud, too boisterous; sometimes I barely speak at all, I almos
 
 [...]
 
-This constant need to translate yourself, to try to translate your own identity.
+They don't understand this constant need to translate yourself, to try to translate your own identity.
 
-**But is it possible to translate an identity?**`
+**Is it even possible to translate an identity?**`
         },
         summary: "Una lingua può avvicinarci alle nostre radici e, altrove, farci sentire fuori posto.",
         question: "La lingua può farci sentire a casa o fuori posto?"
@@ -342,6 +343,7 @@ This constant need to translate yourself, to try to translate your own identity.
 
 **Mum.**
 **Water.**
+**Bread.**
 **Fear.**
 **Home.**
 **I love you.**`
@@ -362,6 +364,9 @@ This constant need to translate yourself, to try to translate your own identity.
   en: {
     pageTitle: "Da un'altra parte - Il Teatro di Pan",
     htmlLanguage: "en",
+    metaDescription: "Da un'altra parte — a theatrical enquiry into the sense of belonging. Il Teatro di Pan, Berlin.",
+    ogTitle: "Da un'altra parte - Il Teatro di Pan",
+    ogDescription: "A theatrical enquiry into the sense of belonging. 11 October 2026, Berlin.",
     labels: {
       skipLink: "Skip to content",
       navLabel: "Primary navigation",
@@ -369,15 +374,15 @@ This constant need to translate yourself, to try to translate your own identity.
       navCast: "Cast",
       navScenes: "Scenes",
       navCredits: "Credits",
-      tagline: "An artistic research project on the meaning of belonging",
+      tagline: "A theatrical enquiry into the sense of belonging",
       date: "Sunday, 11 October 2026 · 8:00 pm",
       scrollCue: "Discover the play",
       overviewEyebrow: "The project",
       overviewTitle: "An open question",
       castEyebrow: "On stage",
       castTitle: "The cast",
-      directorRole: "Direction",
-      scenesEyebrow: "A guide to the play",
+      directorRole: "Director",
+      scenesEyebrow: "A map of the play",
       scenesTitle: "The scenes",
       scenesIntro: "A journey through memories, languages and departures.",
       creditsEyebrow: "Behind the scenes",
@@ -390,11 +395,11 @@ This constant need to translate yourself, to try to translate your own identity.
       englishExcerpt: "English translation to be added",
       portraitPending: "Portrait not yet available",
       portraitAlt: "Portrait of",
-      creditDirection: "Direction",
+      creditDirection: "Director",
       creditCostume: "Costumes",
       creditSound: "Sound",
       creditLight: "Lighting",
-      creditText: "Script written by"
+      creditText: "Texts written by"
     },
     overview: [
       "“Da un'altra parte” is an artistic research project exploring the personal and social meaning of Heimat: home, a place of belonging, and a sense of rootedness.",
@@ -422,8 +427,8 @@ This constant need to translate yourself, to try to translate your own identity.
       },
       {
         id: "functioningIsNotBelonging",
-        title: "Belonging",
-        summary: "A package from home carries food, affection, longing and difficult questions.",
+        title: "Functioning Is Not Belonging",
+        summary: "A parcel from home carries food, affection, longing and difficult questions.",
         question: "Can you be well in a place without feeling that you belong?"
       },
       {
@@ -459,11 +464,11 @@ This constant need to translate yourself, to try to translate your own identity.
     ],
     credits: [
       { role: "Costumes", name: "Kathrin Hauer", href: "https://www.kathrinhauer.de/de/" },
-      { role: "Lightning", name: "Martina Maric" },
+      { role: "Lighting", name: "Martina Maric" },
       { role: "Sound", name: "Davide Bozzaro" },
-      { role: "Theatre Stage Assistance", name: "Nicoló Rossi" },
-      { role: "Theatre Dressing Room Assistance", name: "Emilia Refolo" },
-      { role: "Photos", name: "Jade Thoms" }
+      { role: "Front of House", name: "Nicoló Rossi" },
+      { role: "Dressing Room Assistant", name: "Emilia Refolo" },
+      { role: "Photography", name: "Jade Thoms" }
     ]
   }
 };
@@ -605,6 +610,13 @@ function setLanguage(language, announce = false) {
 
   document.documentElement.lang = copy.htmlLanguage;
   document.title = copy.pageTitle;
+  const metaContent = (selector, value) => {
+    const element = document.querySelector(selector);
+    if (element && value !== undefined) element.setAttribute("content", value);
+  };
+  metaContent('meta[name="description"]', copy.metaDescription);
+  metaContent('meta[property="og:title"]', copy.ogTitle);
+  metaContent('meta[property="og:description"]', copy.ogDescription);
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
     if (copy.labels[key] !== undefined) element.textContent = copy.labels[key];
