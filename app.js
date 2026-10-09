@@ -473,7 +473,7 @@ const textNames = "German Brero · Mattia Doneda · Manuela Pucciarelli · Sara 
 const performers = [
   { name: "Daniele Avola", image: "assets/actors/daniele.jpg" },
   { name: "German Brero", image: "assets/actors/german.jpg" },
-  { name: "Manuela Pucciarelli", image: null },
+  { name: "Manuela Pucciarelli", image: "assets/actors/manuela.jpg" },
   { name: "Sara Romandini", image: "assets/actors/sara.jpg" },
   { name: "Marina Rondini", image: "assets/actors/marina.jpg" },
   { name: "Alessio Sordo", image: "assets/actors/alessio.jpg" },
