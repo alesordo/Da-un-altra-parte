@@ -4,7 +4,7 @@ const content = {
     htmlLanguage: "it",
     metaDescription: "Da un'altra parte - una ricerca teatrale sul senso di appartenenza. Il Teatro di Pan, Berlino.",
     ogTitle: "Da un'altra parte - Il Teatro di Pan",
-    ogDescription: "Una ricerca teatrale sul senso di appartenenza. 11 ottobre 2026, Berlino.",
+    ogDescription: "Una ricerca teatrale sul senso di appartenenza. 22 novembre 2026, Berlino.",
     labels: {
       skipLink: "Salta al contenuto",
       navLabel: "Navigazione principale",
@@ -13,7 +13,7 @@ const content = {
       navScenes: "Le scene",
       navCredits: "Crediti",
       tagline: "Una ricerca teatrale sul senso di appartenenza",
-      date: "Domenica 11 ottobre 2026 · ore 20:00",
+      date: "Domenica 22 novembre 2026 · ore 20:00",
       scrollCue: "Scopri lo spettacolo",
       overviewEyebrow: "Il progetto",
       overviewTitle: "Una domanda aperta",
@@ -366,7 +366,7 @@ They don't understand this constant need to translate yourself, to try to transl
     htmlLanguage: "en",
     metaDescription: "Da un'altra parte — a theatrical enquiry into the sense of belonging. Il Teatro di Pan, Berlin.",
     ogTitle: "Da un'altra parte - Il Teatro di Pan",
-    ogDescription: "A theatrical enquiry into the sense of belonging. 11 October 2026, Berlin.",
+    ogDescription: "A theatrical enquiry into the sense of belonging. 22 November 2026, Berlin.",
     labels: {
       skipLink: "Skip to content",
       navLabel: "Primary navigation",
@@ -375,7 +375,7 @@ They don't understand this constant need to translate yourself, to try to transl
       navScenes: "Scenes",
       navCredits: "Credits",
       tagline: "A theatrical enquiry into the sense of belonging",
-      date: "Sunday, 11 October 2026 · 8:00 pm",
+      date: "Sunday, 22 November 2026 · 8:00 pm",
       scrollCue: "Discover the play",
       overviewEyebrow: "The project",
       overviewTitle: "An open question",
@@ -478,6 +478,7 @@ const textNames = "German Brero · Mattia Doneda · Manuela Pucciarelli · Sara 
 const performers = [
   { name: "Daniele Avola", image: "assets/actors/daniele.jpg" },
   { name: "German Brero", image: "assets/actors/german.jpg" },
+  { name: "Erica Cignarale", image: "" },
   { name: "Manuela Pucciarelli", image: "assets/actors/manuela.jpg" },
   { name: "Sara Romandini", image: "assets/actors/sara.jpg" },
   { name: "Marina Rondini", image: "assets/actors/marina.jpg" },
