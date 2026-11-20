@@ -354,7 +354,7 @@ They don't understand this constant need to translate yourself, to try to transl
     ],
     credits: [
       { role: "Costumi", name: "Kathrin Hauer", href: "https://www.kathrinhauer.de/de/" },
-      { role: "Luci", name: "Martina Maric" },
+      { role: "Luci", name: "Cordula Ritter" },
       { role: "Suono", name: "Davide Bozzaro" },
       { role: "Assistenza sala", name: "Nicoló Rossi" },
       { role: "Assistenza camerino", name: "Emilia Refolo" },
@@ -464,7 +464,7 @@ They don't understand this constant need to translate yourself, to try to transl
     ],
     credits: [
       { role: "Costumes", name: "Kathrin Hauer", href: "https://www.kathrinhauer.de/de/" },
-      { role: "Lighting", name: "Martina Maric" },
+      { role: "Lighting", name: "Cordula Ritter" },
       { role: "Sound", name: "Davide Bozzaro" },
       { role: "Front of House", name: "Nicoló Rossi" },
       { role: "Dressing Room Assistant", name: "Emilia Refolo" },
@@ -478,7 +478,7 @@ const textNames = "German Brero · Mattia Doneda · Manuela Pucciarelli · Sara 
 const performers = [
   { name: "Daniele Avola", image: "assets/actors/daniele.jpg" },
   { name: "German Brero", image: "assets/actors/german.jpg" },
-  { name: "Erica Cignarale", image: "" },
+  { name: "Erica Cignarale", image: "assets/actors/erica.jpg" },
   { name: "Manuela Pucciarelli", image: "assets/actors/manuela.jpg" },
   { name: "Sara Romandini", image: "assets/actors/sara.jpg" },
   { name: "Marina Rondini", image: "assets/actors/marina.jpg" },
